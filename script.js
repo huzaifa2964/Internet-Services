@@ -118,17 +118,19 @@ if (zipInput) {
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-    } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    }
-    
-    lastScroll = currentScroll;
-});
+if (navbar) {
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        } else {
+            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        }
+        
+        lastScroll = currentScroll;
+    });
+}
 
 // Animate elements on scroll
 const observerOptions = {
