@@ -723,6 +723,124 @@ body {
     color: var(--text-light);
 }
 
+/* Payment Section */
+.payment {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.payment-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.payment-info {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.payment-logo {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.netwics-logo {
+    max-width: 250px;
+    height: auto;
+}
+
+.payment-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.payment-description {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.payment-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.payment-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.payment-feature-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.payment-icon {
+    font-size: 1.5rem;
+}
+
+.payment-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-methods {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.payment-methods h4 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+
+.payment-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.payment-card-icon {
+    font-size: 3rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.payment-card-icon:hover {
+    transform: scale(1.1);
+}
+
+.payment-note {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
 /* Contact Section */
 .contact {
     padding: 80px 0;
@@ -966,6 +1084,22 @@ body {
 
     .pricing-card.featured:hover {
         transform: translateY(-5px);
+    }
+
+    .payment-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-features {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-cta {
+        flex-direction: column;
+    }
+
+    .payment-cta .btn {
+        width: 100%;
     }
 
     .contact-wrapper {
