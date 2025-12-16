@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="netwicsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a8e8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle/icon -->
+  <circle cx="30" cy="30" r="25" fill="url(#netwicsGrad)" opacity="0.9"/>
+  
+  <!-- Network connection symbol -->
+  <circle cx="20" cy="20" r="4" fill="white"/>
+  <circle cx="40" cy="20" r="4" fill="white"/>
+  <circle cx="30" cy="35" r="4" fill="white"/>
+  <line x1="20" y1="20" x2="30" y2="35" stroke="white" stroke-width="2"/>
+  <line x1="40" y1="20" x2="30" y2="35" stroke="white" stroke-width="2"/>
+  <line x1="20" y1="20" x2="40" y2="20" stroke="white" stroke-width="2"/>
+  
+  <!-- Netwics text -->
+  <text x="65" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#netwicsGrad)">Netwics</text>
+</svg>
+
